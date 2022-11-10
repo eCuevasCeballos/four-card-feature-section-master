@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+/* 
+
+font-family: 'Poppins', sans-serif;
+
+Colors
+- Red: hsl(0, 78%, 62%)
+- Cyan: hsl(180, 62%, 55%)
+- Orange: hsl(34, 97%, 64%)
+- Blue: hsl(212, 86%, 64%)
+- Very Dark Blue: hsl(234, 12%, 34%)
+- Grayish Blue: hsl(229, 6%, 66%)
+- Very Light Gray: hsl(0, 0%, 98%)
+*/
+
+/* Resetting the page */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Body style and max-width setup */
+body {
+  max-width: 335px;
+  margin: 50px auto;
+  font-family: "Poppins", sans-serif;
+  background-color: hsl(0, 0%, 98%);
+}
+
+/* Header and text style */
+.header {
+  text-align: center;
+  font-weight: 200;
+  color: hsl(234, 12%, 34%);
+  font-size: 1.7rem;
+  margin-bottom: 15px;
+}
+.bold-header {
+  font-weight: 600;
+}
+.text {
+  font-weight: 200;
+  color: hsl(234, 12%, 34%);
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+/* Sub Containers style */
+.sub-container {
+  background-color: white;
+  color: hsl(234, 12%, 34%);
+  border-radius: 10px;
+  margin-bottom: 30px;
+  box-shadow: 0px 5px 10px 0px hsla(234, 12%, 34%, 0.205);
+  display: grid;
+}
+.position {
+  padding-top: 25px;
+  padding-left: 25px;
+}
+.description {
+  padding-left: 25px;
+  width: 90%;
+  padding-bottom: 25px;
+}
+.sub-img {
+  justify-self: end;
+  padding-right: 25px;
+  padding-bottom: 25px;
+}
+.cyan {
+  border-top: 4px solid hsl(180, 62%, 55%);
+}
+.red {
+  border-top: 4px solid hsl(0, 78%, 62%);
+}
+.orange {
+  border-top: 4px solid hsl(34, 97%, 64%);
+}
+.blue {
+  border-top: 4px solid hsl(212, 86%, 64%);
+}
+@media screen and (min-width: 1440px) {
+  body {
+    margin: 30px auto;
+    max-width: 1000px;
+    overflow: hidden;
+  }
+  .main-container {
+    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+  }
+  .header {
+    grid-row: 1;
+    grid-column: 1 / 4;
+    font-size: 2.5rem;
+    width: 50%;
+    justify-self: center;
+  }
+  .text {
+    grid-row: 2;
+    grid-column: 1 / 4;
+    font-size: 1.5rem;
+    width: 65%;
+    justify-self: center;
+    margin-bottom: 40px;
+  }
+  .sub-container {
+    width: 400px;
+    height: 250px;
+  }
+  .cyan {
+    grid-column: 1 / 2;
+    grid-row: 3 / 5;
+    align-self: center;
+  }
+  .red {
+    align-self: center;
+  }
+  .orange {
+    grid-column: 2 / 3;
+    grid-row: 4 / 5;
+    align-self: center;
+  }
+  .blue {
+    grid-column: 3 / 4;
+    grid-row: 3 / 5;
+    align-self: center;
+  }
+}
